@@ -8,27 +8,23 @@ Neste projeto, conduzimos uma análise detalhada e organização dos dados de um
 
 O primeiro passo foi criar uma instância na Azure para hospedar o banco de dados na nuvem. Isso proporcionou escalabilidade, segurança e disponibilidade aos dados.
 
-## 2. Importação do Modelo de Banco de Dados do GitHub
-
-Utilizamos um modelo disponível no GitHub como ponto de partida. Embora seja uma economia de tempo, revisamos cuidadosamente o modelo para garantir que atendesse aos requisitos específicos do projeto.
-
-## 3. Integração do Power BI com MySQL na Azure
+## 2. Integração do Power BI com MySQL na Azure
 
 A integração eficaz do Power BI com o MySQL na Azure permitiu criar visualizações interativas e relatórios com base nos dados do banco. Esta integração foi crucial para análises precisas.
 
-## 4. Limpeza e Transformação de Dados
+## 3. Limpeza e Transformação de Dados
 
 - Identificamos e corrigimos problemas nos dados, incluindo valores nulos e inconsistências.
 - Estabelecemos diretrizes claras para transformação, formatando dados e tratando valores nulos.
 - Validamos a correspondência dos cabeçalhos das colunas com os dados reais e ajustamos os tipos de dados conforme necessário.
 
-## 5. Relacionamentos e Mesclagens
+## 4. Relacionamentos e Mesclagens
 
 - Realizamos mesclagens para criar tabelas combinadas, como unir dados de colaboradores e departamentos.
 - Agrupamos dados para entender quantos colaboradores existem por gerente.
 - Mesclamos nomes de departamentos e localizações para criar identificadores únicos.
 
-## 6. Otimização e Eliminação de Colunas Desnecessárias
+## 5. Otimização e Eliminação de Colunas Desnecessárias
 
 - Removemos colunas não essenciais para simplificar a estrutura de dados.
 - Ajustamos os valores monetários para garantir precisão em cálculos financeiros.
