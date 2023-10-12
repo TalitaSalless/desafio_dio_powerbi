@@ -32,6 +32,7 @@ A integração eficaz do Power BI com o MySQL na Azure permitiu criar visualiza�
 ## Conclusões
 
 Em resumo, a análise, limpeza e transformação dos dados são etapas cruciais para garantir confiabilidade e relevância para análises futuras. Estas etapas são fundamentais para preparar os dados para insights significativos e informados.
+O Power BI não é apenas uma ferramenta de visualização de dados, mas um ecossistema completo de análise de negócios. Sua acessibilidade, conectividade, poder analítico e recursos colaborativos o tornam uma escolha poderosa para empresas de todos os tamanhos. Ao transformar dados brutos em informações claras e acionáveis, o Power BI capacita as organizações a tomar decisões informadas, ganhar vantagem competitiva e impulsionar o sucesso empresarial.
 
 
 ![Texto Alternativo](https://github.com/TalitaSalless/desafio_dio_powerbi/blob/main/Relat%C3%B3rio_analise.png?raw=true)
