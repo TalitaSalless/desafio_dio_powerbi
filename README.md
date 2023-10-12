@@ -1,13 +1,41 @@
-##Organização e Padronização de Dados em uma Base de Dados
+# Projeto de Análise e Transformação de Dados
 
-No processo de estruturação e organização de uma base de dados, é essencial estabelecer padrões consistentes para os tipos de dados e os nomes das colunas. Uma abordagem crucial envolve a renomeação de colunas para garantir uniformidade e clareza nos dados. Por exemplo, na tabela de funcionários, a coluna Dno foi renomeada para Dnumber, e na tabela de projetos, a coluna Dnum também passou a ser chamada de Dnumber. Além disso, a coluna Pno na tabela de atividades (works_on) foi modificada para Pnumber, e a coluna Super_ssn na tabela de funcionários agora é referida como Mgr_ssn.
+## Introdução
 
-Além das alterações nos nomes das colunas, é fundamental ajustar os tipos de dados para refletir com precisão as informações. Por exemplo, a coluna Salary na tabela de funcionários foi transformada de "Número Decimal" para "Número Decimal Fixo". Outro aspecto relevante é a manutenção das colunas de SSN como texto, uma vez que não serão utilizadas em cálculos matemáticos.
+Neste projeto, conduzimos uma análise detalhada e organização dos dados de um banco de dados específico. O foco foi garantir a estrutura adequada do banco de dados, a precisão dos dados e a disponibilidade para análises futuras. Abaixo estão as etapas cruciais realizadas no processo:
 
-Para facilitar a análise dos dados, foram realizadas operações de divisão e combinação de colunas. Na tabela de funcionários, as colunas Fname, Minit e Lname foram mescladas para criar a nova coluna Ename. Além disso, a coluna Address foi dividida usando o delimitador "-" em cada ocorrência. As novas colunas resultantes dessa divisão foram renomeadas para Address_number, Rua, Cidade e Estado.
+## 1. Criação de uma Instância MySQL na Azure
 
-A integração de tabelas também foi efetuada para agregar informações. A tabela de funcionários foi associada à tabela de departamentos para fornecer detalhes sobre os colaboradores e seus respectivos departamentos, possibilitando ainda a contagem de colaboradores por departamento. Além disso, foi estabelecida uma conexão entre a tabela de funcionários e a tabela de dependências, permitindo a contagem de dependentes por colaborador.
+O primeiro passo foi criar uma instância na Azure para hospedar o banco de dados na nuvem. Isso proporcionou escalabilidade, segurança e disponibilidade aos dados.
 
-Durante esse processo, a eliminação de nulos e colunas desnecessárias foi realizada de forma a otimizar a estrutura da base de dados. Por exemplo, na tabela de departamentos, as colunas Mgr_start_date e Dept_create_date foram excluídas por não serem relevantes para a análise proposta. Da mesma forma, na tabela de funcionários, informações detalhadas como data de nascimento, número e nome da rua foram removidas, mantendo apenas Cidade e Estado para análise geral. Ademais, a tabela de dependentes foi completamente excluída, uma vez que a contagem de dependentes por colaborador foi considerada suficiente para o contexto da análise.
+## 2. Importação do Modelo de Banco de Dados do GitHub
 
-Ao realizar a análise dos dados resultantes, algumas conclusões importantes foram observadas. Todos os departamentos possuem gerentes designados, e qualquer colaborador com um gerente nulo assume automaticamente a posição de gerente do departamento correspondente. Além disso, ao observar a contagem de horas trabalhadas, foi identificado que um dos colaboradores não está ativo, pois registrou zero horas de trabalho. Estas observações fornecem insights cruciais para a gestão e tomada de decisões na organização.
+Utilizamos um modelo disponível no GitHub como ponto de partida. Embora seja uma economia de tempo, revisamos cuidadosamente o modelo para garantir que atendesse aos requisitos específicos do projeto.
+
+## 3. Integração do Power BI com MySQL na Azure
+
+A integração eficaz do Power BI com o MySQL na Azure permitiu criar visualizações interativas e relatórios com base nos dados do banco. Esta integração foi crucial para análises precisas.
+
+## 4. Limpeza e Transformação de Dados
+
+- Identificamos e corrigimos problemas nos dados, incluindo valores nulos e inconsistências.
+- Estabelecemos diretrizes claras para transformação, formatando dados e tratando valores nulos.
+- Validamos a correspondência dos cabeçalhos das colunas com os dados reais e ajustamos os tipos de dados conforme necessário.
+
+## 5. Relacionamentos e Mesclagens
+
+- Realizamos mesclagens para criar tabelas combinadas, como unir dados de colaboradores e departamentos.
+- Agrupamos dados para entender quantos colaboradores existem por gerente.
+- Mesclamos nomes de departamentos e localizações para criar identificadores únicos.
+
+## 6. Otimização e Eliminação de Colunas Desnecessárias
+
+- Removemos colunas não essenciais para simplificar a estrutura de dados.
+- Ajustamos os valores monetários para garantir precisão em cálculos financeiros.
+
+## Conclusões
+
+Em resumo, a análise, limpeza e transformação dos dados são etapas cruciais para garantir confiabilidade e relevância para análises futuras. Estas etapas são fundamentais para preparar os dados para insights significativos e informados.
+
+
+
